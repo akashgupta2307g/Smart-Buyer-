@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "SmartBuyer",
+  "description": "Get the lowest price on millions of products + all online store,, buy more, earn more",
+  "version": "3.5.05",
+   "icons": {
+    "48": "logo1.png"
+  },
+
+    "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-3.2.1.min.js","alertify.js","alertify.min.js","content.js"],
+	  "css":["alertify.bootstrap.css","alertify.core.css","alertify.default.css"]
+    }
+  ],
+  
+  "permissions": [
+    "tabs", "http://*/*", "https://*/", "activeTab",
+	"cookies",
+	"webRequest",
+	"activeTab",
+	"storage"
+  ],
+
+  "browser_action": {
+      "default_title": "SmartBuyer",
+      "default_icon": "logo1.png",
+	   "default_popup": "searchpopup.html"
+  },
+  
+  "background": {
+    "scripts": ["jquery-3.2.1.min.js","background.js"],
+    "persistent": true
+  } ,
+ "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  
+}

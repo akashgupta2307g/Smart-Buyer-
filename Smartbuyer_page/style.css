@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:sans-serif ;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color:#fbfdfb ;
+}
+.wrapper{
+    width: 90%;
+     height: 100vh;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+}
+.text{
+    flex-basis: 45%;
+}
+.all-images{
+    height:80vh;
+    display:flex ;
+}
+.small-images{
+    display: flex;
+    flex-direction: column;
+}
+.small-images img{
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.checked {
+    color: red ;
+}
+.small-images img:hover{
+    opacity: 1;
+}
+.main-images img{
+    height :100%;
+}
+p{
+    margin:5px 5px ;
+}
+.brand{
+    background-color: green;
+    width:fit-content;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+.flipkartprice{
+    font-size: 30px;
+}
+.amazonprice{
+    font-size: 30px;
+}
+.relienceprice{
+   font-size:30px;
+}
+.cromaprice{
+    font-size:30px;
+}
+.tataprice{
+    font-size:30px;
+}
+.buy-button{
+    padding:8px 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #fe980f;
+}
+nav{
+    display: flex;
+    background-color: #0a0b0a;
+    align-items: center;
+    padding: 8px 10px;
+}
+h1{
+    color:#fe980f;
+    font-size:50px;
+    align-items: center;
+    padding-left: 25%;
+}

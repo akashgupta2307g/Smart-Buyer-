@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">	
+ <head>
+	<meta charset="UTF-8">		
+	<title>Smartbuyer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+ <body>	
+      <section id="header"></section>
+     <div class="container">
+         <div class="wrapper">
+             <div class="product-box">
+                 <div class="all-images">
+                 <div class="small-images">
+                     <img src="images\samsung-galaxy-m52-1.webp"onclick="clickimg(this)"> 
+
+                     <img src="images\samsung-galaxy-m52-2.webp"onclick="clickimg(this)"> 
+                     <img src="images\samsung-galaxy-m52-5.webp"onclick="clickimg(this)"> 
+                 </div> 
+                 <div class="main-images">
+                    <img src="images\samsung-galaxy-m52-5.webp" id="imagebox">   
+                 </div>
+                </div>
+             </div>
+       
+          <div class="text">
+              <div class="content">
+                 <hr> <p class="brand">Brand : Samsung</p><hr>
+                  <h2>Samsung-galaxy-m52(6GB+128GB) </h2>
+                  <div class:"review">
+                      <span>(4.6)</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span><hr>
+                  </div>
+                  <div class="price-box">
+                      <p class="price">&#8377; <strong>24,999</strong></p>
+                      <strike>&#8377; 26,999</strike><hr>
+                  </div>
+                  <div class="flipkart">
+                      <span><img src="images\flipcart.jpg"></span>
+                      <span class="flipkartprice">&#8377; 25,999</span>
+                     <a href="https://www.flipkart.com/samsung-galaxy-m52-5g-icy-blue-128-gb/p/itmae7eb598660a0?pid=MOBG7PF4X3SNB2EG&lid=LSTMOBG7PF4X3SNB2EGU4WGLA&marketplace=FLIPKART&q=samsung+galaxy+a52&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=search-autosuggest&iid=4aae4b9d-c25c-4cf9-8046-ec1c83cb52af.MOBG7PF4X3SNB2EG.SEARCH&ppt=sp&ppn=sp&ssid=cljox7dzf40000001650730255559&qH=f8730a2982fe7b00"> <button class="buy-button">Shop now</button></a>
+                  </div><hr>
+                  <div class="amazone">
+                    <span><img src="images\amazon.png"></span>
+                    <span class="amazonprice">&#8377; 25,999</span>
+                    <a href="https://www.amazon.in/Samsung-Storage-Snapdragon-sAMOLED-Display/dp/B09CV6FJ62/ref=sr_1_8?crid=2DII4UUCH9L84&keywords=samsung%2Ba53%2B5g&qid=1650729794&sprefix=smasung%2Ba%2Caps%2C251&sr=8-8&th=1"><button class="buy-button">Shop now</button> </a><hr>
+                </div>
+
+              </div>
+              
+          </div>
+        </div>
+    </div>
+    <script>
+        function clickimg(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+ </body>
